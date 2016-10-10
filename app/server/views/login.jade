@@ -26,17 +26,17 @@ block content
 				#forgot-password
 					a(href='#') Forgot Your Password?
 				#create-account
-					a(href='/signup') Create An Account
+					a(href='#{baseURL}/signup') Create An Account
 			.clearfix
 
 	include modals/alert
 	include modals/lost-password
 
 block scripts
-	script(src='/vendor/jquery-2.2.3.min.js')
-	script(src='/vendor/jquery.form.min.js')
-	script(src='/vendor/bootstrap.min.js')
-	script(src='/js/views/login.js')
-	script(src='/js/controllers/loginController.js')
-	script(src='/js/form-validators/loginValidator.js')
-	script(src='/js/form-validators/emailValidator.js')
+	script(src='#{baseURL}/vendor/jquery-2.2.3.min.js')
+	script(src='#{baseURL}/vendor/jquery.form.min.js')
+	script(src='#{baseURL}/vendor/bootstrap.min.js')
+	script(src='#{baseURL}/js/views/login.js')
+	script(src='#{baseURL}/js/controllers/loginController.js')
+	script(src='#{baseURL}/js/form-validators/loginValidator.js')
+	script(src='#{baseURL}/js/form-validators/emailValidator.js')

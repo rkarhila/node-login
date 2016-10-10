@@ -11,6 +11,10 @@
 * Local Cookie Storage for Returning Users
 * Blowfish-based Scheme Password Encryption
 
+### Addition in this fork: ###
+
+* define BASEURL environment variable (`env BASEURL="/my/base/url" node app.js`) to run on https://your.server/my/base/url/.
+
 
 ###Node-Login is built on top of the following libraries :
 

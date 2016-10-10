@@ -25,6 +25,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require('stylus').middleware({ src: __dirname + '/app/public' }));
 app.use(express.static(__dirname + '/app/public'));
 
+
+app.locals.baseURL = process.env.BASEURL || '';
+
+
 // build mongo database connection url //
 
 var dbHost = process.env.DB_HOST || 'localhost'
